@@ -1,0 +1,15 @@
+{
+  "mcp": {
+    "servers": {
+      "objects": {
+        "type": "stdio",
+        "command": "node",
+        "args": [
+          "Q:/AIZCODE.V4/mcp-server/build/index.js"
+        ],
+        "cwd": "Q:/AIZCODE.V4",
+        "enabled": false
+      }
+    }
+  }
+}

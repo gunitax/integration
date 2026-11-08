@@ -1,0 +1,45 @@
+﻿---
+name: cfe-validate
+description: Валидация расширения конфигурации 1С (CFE). Используй после создания или модификации расширения для проверки корректности
+argument-hint: <ExtensionPath> [-ConfigPath <ConfigDir>] [-Detailed] [-MaxErrors 30]
+allowed-tools:
+  - Bash
+  - Read
+  - Glob
+---
+
+> **Источник:** [Nikolay-Shirokov/cc-1c-skills](https://github.com/Nikolay-Shirokov/cc-1c-skills), коммит `91ebb9e`, лицензия MIT — см. [THIRD-PARTY-NOTICE.md](../THIRD-PARTY-NOTICE.md). Адаптировано для этого репозитория: пути скриптов переведены на `.zcode/skills/cfe-validate/scripts/`. Упоминания других скиллов набора (`/db-list`, `/db-repo`, `form-add` и т.п.) работают, только если соответствующие скиллы тоже скопированы.
+
+
+# /cfe-validate — валидация расширения конфигурации (CFE)
+
+Проверяет структурную корректность расширения: XML-формат, свойства, состав, заимствованные объекты, права ролей. Аналог `/cf-validate`, но для расширений.
+
+Проверяются исходники. Применимость — уже после загрузки в базу: `/db-cfe-admin check`.
+
+## Параметры
+
+| Параметр      | Обяз. | Умолч. | Описание                                        |
+|---------------|:-----:|---------|-------------------------------------------------|
+| ExtensionPath | да    | —       | Путь к каталогу или Configuration.xml расширения |
+| ConfigPath    | нет   | —       | Каталог конфигурации, из которой заимствованы объекты |
+| Detailed      | нет   | —       | Подробный вывод (все проверки, включая успешные)  |
+| MaxErrors     | нет   | 30      | Остановиться после N ошибок                      |
+| OutFile       | нет   | —       | Записать результат в файл                        |
+
+### ConfigPath
+
+Указывай всегда, когда конфигурация-источник доступна: по ней сверяется связь заимствованных объектов с объектами конфигурации и основной язык. Без неё такие расхождения не ловятся, и расширение может пройти валидацию, а потом быть отвергнутым платформой.
+
+Если пользователь не указал путь — определи сам:
+1. Прочитай `.v8-project.json` из корня проекта
+2. Разреши целевую базу (по имени, ветке или `default`)
+3. Возьми её поле `configSrc`
+
+## Команда
+
+```powershell
+powershell.exe -NoProfile -File ".zcode/skills/cfe-validate/scripts/cfe-validate.ps1" -ExtensionPath "src\cfe\extname"
+powershell.exe -NoProfile -File ".zcode/skills/cfe-validate/scripts/cfe-validate.ps1" -ExtensionPath "src\cfe\extname\Configuration.xml"
+powershell.exe -NoProfile -File ".zcode/skills/cfe-validate/scripts/cfe-validate.ps1" -ExtensionPath "src\cfe\extname" -ConfigPath "src\cf"
+```

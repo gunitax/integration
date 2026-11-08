@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="45f9e5a5-3606-4ec9-8b7c-b72121979186">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.КД_ОперацииПКО" category="Ref">
+				<xr:TypeId>953a3aa4-1168-45bd-bd55-3db50b225112</xr:TypeId>
+				<xr:ValueId>2b6400f8-fae8-43aa-9c6e-c9955445e2d1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.КД_ОперацииПКО" category="Manager">
+				<xr:TypeId>1a2c03b0-7dba-4099-b85a-2af33cbe7381</xr:TypeId>
+				<xr:ValueId>d0437174-4762-4d69-ba95-4c0045a78d21</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.КД_ОперацииПКО" category="List">
+				<xr:TypeId>13ea483c-804a-47bc-ad4e-aae4075cd4ab</xr:TypeId>
+				<xr:ValueId>4d485a0b-e49a-4704-aa9e-f89b203a07dd</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КД_ОперацииПКО</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Операции приходного кассового ордера</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="2113acb5-94a3-43ed-a655-4005dc21b5ff">
+				<Properties>
+					<Name>ПоступлениеОплатыОтКлиента</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поступление оплаты от клиента</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="22b8a121-9025-4a89-a55c-4977005b7dc2">
+				<Properties>
+					<Name>ВозвратОтПодотчетногоЛица</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возврат от подотчетного лица</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="541a7b20-e83c-40b4-be5e-f32a72d481ae">
+				<Properties>
+					<Name>ПрочееПоступление</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочее поступление</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

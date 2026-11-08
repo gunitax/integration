@@ -1,0 +1,13 @@
+﻿Загрузка VAExtension в InfoBase22 — 2026-11-07 13:43:01
+Конфигуратор: C:\Program Files\1cv8\8.5.1.1529\bin\1cv8.exe
+База: C:\Users\sax\Documents\InfoBase22 (файловая), пользователь Администратор
+
+LoadCfg: код 0 (ok)
+  Загрузка конфигурации успешно завершена
+
+UpdateDBCfg: код 0 (ok)
+
+CheckConfig: код 0 (ok)
+  Ошибок не обнаружено
+
+ИТОГ: Готово — расширение VAExtension загружено и применено в InfoBase22.

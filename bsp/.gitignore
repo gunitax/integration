@@ -1,0 +1,10 @@
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+*.log
+.env
+.specify/
+Vanessa/reports/
+Vanessa/logs/
+Vanessa/features/features/

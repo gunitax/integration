@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="BootstrapServers" id="7">
+			<DataPath>Объект.BootstrapServers</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="BootstrapServersКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="BootstrapServersРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ИмяГруппыПолучателей" id="37">
+			<DataPath>Объект.ИмяГруппыПолучателей</DataPath>
+			<ContextMenu name="ИмяГруппыПолучателейКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ИмяГруппыПолучателейРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<Table name="Топики" id="10">
+			<Representation>List</Representation>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Топики</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТопикиКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ТопикиКоманднаяПанель" id="12">
+				<ChildItems>
+					<Button name="ФормаЗарегистрироватьИзменения" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗарегистрироватьИзменения</CommandName>
+						<ExtendedTooltip name="ФормаЗарегистрироватьИзмененияРасширеннаяПодсказка" id="33"/>
+					</Button>
+					<Button name="ТопикиУдалитьРегистрацию" id="43">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьРегистрацию</CommandName>
+						<ExtendedTooltip name="ТопикиУдалитьРегистрациюРасширеннаяПодсказка" id="44"/>
+					</Button>
+					<Button name="ТопикиЗапуститьОбмен" id="48">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗапуститьОбмен</CommandName>
+						<ExtendedTooltip name="ТопикиЗапуститьОбменРасширеннаяПодсказка" id="49"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТопикиРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ТопикиСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Топики</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТопикиСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТопикиСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТопикиСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Топики</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТопикиСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ТопикиСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТопикиУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Топики</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТопикиУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ТопикиУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ТопикиВыбор</Event>
+				<Event name="BeforeEditEnd">ТопикиПередОкончаниемРедактирования</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ТопикиНаправлениеОбмена" id="34">
+					<DataPath>Объект.Топики.НаправлениеОбмена</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТопикиНаправлениеОбменаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТопикиНаправлениеОбменаРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="ТопикиИмяТопика" id="26">
+					<DataPath>Объект.Топики.ИмяТопика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТопикиИмяТопикаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТопикиИмяТопикаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТопикиМетаданные" id="29">
+					<DataPath>Объект.Топики.Метаданные</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТопикиМетаданныеКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТопикиМетаданныеРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<PictureField name="ПараметрыТопика" id="40">
+					<DataPath>Объект.Топики.ПараметрыТопика_</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Hyperlink>true</Hyperlink>
+					<ValuesPicture>
+						<xr:Ref>StdPicture.Parameters</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ПараметрыТопикаКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ПараметрыТопикаРасширеннаяПодсказка" id="42"/>
+				</PictureField>
+			</ChildItems>
+		</Table>
+		<InputField name="НомерОтправленного" id="45">
+			<DataPath>Объект.SentNo</DataPath>
+			<ContextMenu name="НомерОтправленногоКонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="НомерОтправленногоРасширеннаяПодсказка" id="47"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExchangePlanObject.ApacheKafka</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.Топики">
+					<Column name="ПараметрыТопика_" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Параметры топика</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗарегистрироватьИзменения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрировать изменения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрировать изменения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗарегистрироватьИзменения</Action>
+		</Command>
+		<Command name="УдалитьРегистрацию" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить регистрацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить регистрацию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьРегистрацию</Action>
+		</Command>
+		<Command name="ЗапуститьОбмен" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить обмен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить обмен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьОбмен</Action>
+		</Command>
+	</Commands>
+</Form>

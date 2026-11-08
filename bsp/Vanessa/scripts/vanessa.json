@@ -1,0 +1,18 @@
+{
+  "epf": {
+    "version": "1.2.043.42",
+    "url": "https://github.com/Pr-Mex/vanessa-automation/releases/download/1.2.043.42/vanessa-automation-single.1.2.043.42.zip",
+    "member": "vanessa-automation-single.epf",
+    "sha256": "92675132e3b59e9cb492f4202746d29455c108cd6c9e0751c7c3e950080239e0"
+  },
+  "client_mcp": {
+    "version": "0.6.5",
+    "url": "https://github.com/1c-neurofish/onec-client-mcp-devkit/releases/download/v0.6.5/client_mcp.cfe",
+    "sha256": "d1093475a15e50a33ad48a64b61d09d1108b5a39328c73e6be17a5c914825e7f"
+  },
+  "extension": {
+    "version": "1.32",
+    "url": "https://github.com/Pr-Mex/vanessa-automation/releases/download/1.2.043.42/VAExtension.1.32.cfe",
+    "sha256": "3a90c163f7b7c4852e2a74a1fb4270276310add974fbe443059152e7417e1fc4"
+  }
+}

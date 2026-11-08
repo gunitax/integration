@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="0e7a4c3b-9f2d-4b5e-8a1c-3d6f5b7e9a24">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.КД_ОперацииРКО" category="Ref">
+				<xr:TypeId>5c3b1f8a-2e7d-4a69-9b04-d8f1a3c7e25b</xr:TypeId>
+				<xr:ValueId>e94d6a21-7b35-4c08-a1f6-2b9d5e4f7c31</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.КД_ОперацииРКО" category="Manager">
+				<xr:TypeId>af28d5b7-6c19-43e4-8d92-71e6b0f4c5a8</xr:TypeId>
+				<xr:ValueId>3b7e9d42-08fa-4c15-9e63-a5d2c8f1b670</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.КД_ОперацииРКО" category="List">
+				<xr:TypeId>d61c8f3e-b402-4a97-825d-c9e1f6a3b845</xr:TypeId>
+				<xr:ValueId>7f4a2d9c-51e8-4b36-b0a7-6d3c9e8f1b52</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КД_ОперацииРКО</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Операции расходного кассового ордера</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="92e5b7a4-3c18-4f6d-8b25-c1a9e6d3f740">
+				<Properties>
+					<Name>ВыдачаПодотчетнику</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выдача подотчетнику</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4a8d2f6b-7e15-4c93-a840-9d3b1e5c6f82">
+				<Properties>
+					<Name>ОплатаПоставщику</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оплата поставщику</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6f1c9a3d-8b42-4d57-9e06-2a7f4c8d1b93">
+				<Properties>
+					<Name>ВозвратОплатыКлиенту</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возврат оплаты клиенту</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b35e7d94-1f68-4a2b-9c73-8e4d6a1f5c07">
+				<Properties>
+					<Name>ПрочееРасходование</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочее расходование</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
