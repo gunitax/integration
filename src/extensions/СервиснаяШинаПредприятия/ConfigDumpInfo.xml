@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.21">
+	<ConfigVersions>
+		<Metadata name="Catalog.ИдентификаторыОбъектовМетаданных" id="9a49994b-84a5-406b-afbb-0010d59547ec" configVersion="97f826612343a75e6b27c72116f9915b51e297a6"/>
+		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыСШП" id="a715a21f-865e-46aa-822f-f1a40d80d068" configVersion="a3f02c878d89ccef1ae475310b439f489e96a82f"/>
+		<Metadata name="CommonModule.ОбновлениеИнформационнойБазыСШП.Module" id="a715a21f-865e-46aa-822f-f1a40d80d068.0" configVersion="768b62f3dac3e6493b7f3eacebebcad18cbe83b2"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияПереопределяемый" id="478c92c9-dace-4322-85a3-282c254accef" configVersion="03911d6882f9a5f7c25d2ebd8dc41eb090be37f2"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияПереопределяемый.Module" id="478c92c9-dace-4322-85a3-282c254accef.0" configVersion="d300a88b835b9750fedb091e6bfabcbf7c09ea0a"/>
+		<Metadata name="CommonModule.ПодсистемыКонфигурацииПереопределяемый" id="019399d9-9c6b-4f24-bc84-cdb33d6b2588" configVersion="9497d723f3cf4afe28ea56a3e516b7f1587dfe72"/>
+		<Metadata name="CommonModule.ПодсистемыКонфигурацииПереопределяемый.Module" id="019399d9-9c6b-4f24-bc84-cdb33d6b2588.0" configVersion="7fc888374c6374136f5d51f8fd6c7bd6730fcd21"/>
+		<Metadata name="CommonModule.СервиснаяШинаПредприятия" id="ef305799-43cd-4594-8928-a00e361ec462" configVersion="5d285a5e75776158cb921e65f13f16a07dde9ee0"/>
+		<Metadata name="CommonModule.СервиснаяШинаПредприятия.Module" id="ef305799-43cd-4594-8928-a00e361ec462.0" configVersion="2f11698dfc9ea3ebe8dab380470fc5325dfb8348"/>
+		<Metadata name="CommonModule.СервиснаяШинаПредприятияКлиентСервер" id="f0894dfe-8c0b-48ec-8af9-83f18d0964a5" configVersion="cb01bafa341b3133f000494a81838367ed20e30b"/>
+		<Metadata name="CommonModule.СервиснаяШинаПредприятияКлиентСервер.Module" id="f0894dfe-8c0b-48ec-8af9-83f18d0964a5.0" configVersion="2475bbdc270de2e1c9456433c1bf2dc568c1126b"/>
+		<Metadata name="CommonModule.СервиснаяШинаПредприятияОтправитель" id="5e447e65-80ba-4f12-8059-a073b180ec3d" configVersion="62d3414f727077b8d56e811c4024e3a9c69f0d19"/>
+		<Metadata name="CommonModule.СервиснаяШинаПредприятияОтправитель.Module" id="5e447e65-80ba-4f12-8059-a073b180ec3d.0" configVersion="40aaf260680f716711ae1e58e84b7bc25459251f"/>
+		<Metadata name="CommonModule.СервиснаяШинаПредприятияПовтИсп" id="a9343a81-0751-4657-b8d7-612d6833c666" configVersion="12a6f2eed2569b1a424b85d2db04e42535f84d65"/>
+		<Metadata name="CommonModule.СервиснаяШинаПредприятияПовтИсп.Module" id="a9343a81-0751-4657-b8d7-612d6833c666.0" configVersion="21d7ff100889fb67d35103f1ed86adbc29bd8449"/>
+		<Metadata name="CommonModule.СервиснаяШинаПредприятияПолучатель" id="b7beb0de-f3f0-40d6-98d1-72890b9235fd" configVersion="ec5b4636f3359371b10c25a83edba8e23a8a5bc8"/>
+		<Metadata name="CommonModule.СервиснаяШинаПредприятияПолучатель.Module" id="b7beb0de-f3f0-40d6-98d1-72890b9235fd.0" configVersion="04a3a825640b9e4d5137a63396b0a0b0308eee6f"/>
+		<Metadata name="CommonModule.СервиснаяШинаПредприятияСлужебный" id="9e82b3b3-df97-434d-96f0-99246d04535b" configVersion="b99c78afbe85130669e508d4d9775f9e68dc8a51"/>
+		<Metadata name="CommonModule.СервиснаяШинаПредприятияСлужебный.Module" id="9e82b3b3-df97-434d-96f0-99246d04535b.0" configVersion="6535b0e45aed740e2194a72df599aab08a5576fd"/>
+		<Metadata name="CommonPicture.ПодсистемаСервиснаяШинаПредприятия" id="aa47bb80-d25c-424f-b71f-f6c2d5a49751" configVersion="8cc5323970139f9592504e16bb7f123a4f794c3a"/>
+		<Metadata name="CommonPicture.ПодсистемаСервиснаяШинаПредприятия.Picture" id="aa47bb80-d25c-424f-b71f-f6c2d5a49751.0" configVersion="7b63003db0653335992475fbc7fc0e670afb1daa"/>
+		<Metadata name="CommonTemplate.librdkafka_linux32" id="41af536f-d150-4d93-8e00-77f821764655" configVersion="3699027ffe5e89628dd36e8d9b0b802fa0901213"/>
+		<Metadata name="CommonTemplate.librdkafka_linux32.Template" id="41af536f-d150-4d93-8e00-77f821764655.0" configVersion="ac3779210ad774fe7c04ea3f27e970d5a1ca8d6d"/>
+		<Metadata name="CommonTemplate.librdkafka_linux64" id="e6da7936-fc8d-45ad-a501-dd3fd72716a8" configVersion="972e0c06a32bb0b767c33ff96472830826100997"/>
+		<Metadata name="CommonTemplate.librdkafka_linux64.Template" id="e6da7936-fc8d-45ad-a501-dd3fd72716a8.0" configVersion="e29f0054b670ecc128adaa2cad0818a5b3b169c4"/>
+		<Metadata name="CommonTemplate.librdkafka_win32" id="814a0f0e-7c27-48a4-b55f-f783261ed651" configVersion="7304ff7b1795b86cc262205c702614b64c903b12"/>
+		<Metadata name="CommonTemplate.librdkafka_win32.Template" id="814a0f0e-7c27-48a4-b55f-f783261ed651.0" configVersion="2e8d73b5d6a62ec3ea330056eb3ceef25b7a870d"/>
+		<Metadata name="CommonTemplate.librdkafka_win64" id="98397f20-a1a2-4fcb-872c-23066023b1d6" configVersion="208d0ee9a8661dcd471fc4e6108d87368fa9da3d"/>
+		<Metadata name="CommonTemplate.librdkafka_win64.Template" id="98397f20-a1a2-4fcb-872c-23066023b1d6.0" configVersion="b17c9a392a624cb145909c9cfb504ed943025bf0"/>
+		<Metadata name="Configuration.СервиснаяШинаПредприятия" id="4605c0ee-8620-4eb9-9feb-3a351d8795e7" configVersion="08dae864fd5faf2d2b4a7794c2f8bd8164a8e3a1"/>
+		<Metadata name="Enum.НаправленияОбменаССервиснойШиной" id="0f6ff5dc-dc70-4997-989d-885ce63cb108" configVersion="843a6d8cb94420e69ae13e4bd7517d32154eb2b2">
+			<Metadata name="Enum.НаправленияОбменаССервиснойШиной.EnumValue.Входящий" id="0b24670d-2470-42d5-8afc-4ef813710fd0"/>
+			<Metadata name="Enum.НаправленияОбменаССервиснойШиной.EnumValue.Исходящий" id="66b713f7-429c-4b34-89da-a3119fd29209"/>
+		</Metadata>
+		<Metadata name="EventSubscription.ИсключитьУзлыСервиснойШиныПередЗаписьюНабораЗаписей" id="0c4d1758-d48e-4e91-a42c-881b823080f7" configVersion="b77bc99e3914eeea861295962e659a96f1f028ab"/>
+		<Metadata name="EventSubscription.ИсключитьУзлыСервиснойШиныПередЗаписьюОбъекта" id="00929ca1-1605-401a-b958-bcc51f6c84ec" configVersion="e0fb8458daecb2ecb32f1ec3d4732ec8761db2b1"/>
+		<Metadata name="ExchangePlan.ApacheKafka" id="c34efabd-b260-4b64-99f0-71a655e3e493" configVersion="8d3d7568b816bca9d32497784dba17b5338b67b8">
+			<Metadata name="ExchangePlan.ApacheKafka.TabularSection.Топики.Attribute.Метаданные" id="445db272-7640-4139-968c-226e10444cb9"/>
+			<Metadata name="ExchangePlan.ApacheKafka.Attribute.BootstrapServers" id="513ad19c-6d9d-43b8-9e3b-c0bb888d2a29"/>
+			<Metadata name="ExchangePlan.ApacheKafka.Attribute.ИмяГруппыПолучателей" id="6e23df72-951d-4e84-87ad-74a18fd9320a"/>
+			<Metadata name="ExchangePlan.ApacheKafka.TabularSection.Топики.Attribute.ИмяТопика" id="7af3a589-baa8-4e01-a644-260b43ce489d"/>
+			<Metadata name="ExchangePlan.ApacheKafka.TabularSection.Топики.Attribute.УИДПотока" id="82e3a3b4-a04c-4dd5-b197-fb4e0bf31ddf"/>
+			<Metadata name="ExchangePlan.ApacheKafka.TabularSection.Топики" id="8d34e759-574b-4159-a7ad-7e64bd504ef2"/>
+			<Metadata name="ExchangePlan.ApacheKafka.TabularSection.Топики.Attribute.НаправлениеОбмена" id="a731ce91-aca1-40d0-81b8-852aeda75a42"/>
+			<Metadata name="ExchangePlan.ApacheKafka.TabularSection.Топики.Attribute.ПараметрыТопика" id="c6dbc7aa-3713-4cdf-833d-5206db1091b6"/>
+		</Metadata>
+		<Metadata name="ExchangePlan.ApacheKafka.Content" id="c34efabd-b260-4b64-99f0-71a655e3e493.1" configVersion="50c063fb932fabe4801c797a7c855eba1fd3664b"/>
+		<Metadata name="ExchangePlan.ApacheKafka.Form.ПараметрыТопика" id="adc82b73-6081-4783-ad8d-82a62542174f" configVersion="e311e92d85de6a37bc0b2a30f326a23dcdae20f6"/>
+		<Metadata name="ExchangePlan.ApacheKafka.Form.ПараметрыТопика.Form" id="adc82b73-6081-4783-ad8d-82a62542174f.0" configVersion="a1c11aae2de80a3d5d7c35d322e1ea9def823114"/>
+		<Metadata name="ExchangePlan.ApacheKafka.Form.ФормаУзла" id="a5a7a910-0cec-4502-9534-704d977a1dc5" configVersion="0fe1b5e292d44e76542434d1fa3d63f98ef07261"/>
+		<Metadata name="ExchangePlan.ApacheKafka.Form.ФормаУзла.Form" id="a5a7a910-0cec-4502-9534-704d977a1dc5.0" configVersion="2c34a654c2fffeae34cde1a263dc6bcf0654ac51"/>
+		<Metadata name="ExchangePlan.ApacheKafka.ManagerModule" id="c34efabd-b260-4b64-99f0-71a655e3e493.3" configVersion="a6c6660787ed3ff881e915f3f81bfcc88dd9c640"/>
+		<Metadata name="ExchangePlan.ApacheKafka.ObjectModule" id="c34efabd-b260-4b64-99f0-71a655e3e493.2" configVersion="e5f6af9fedc3ea465bdf681c90a80d1b381e27ff"/>
+		<Metadata name="Language.Русский" id="9baaf41e-1b6b-4dc9-84f7-9d86c738e9f5" configVersion="a235bf3f11e669d37421f8b84043e05e1407c648"/>
+		<Metadata name="Role.СШП_ОсновнаяРоль" id="1658dbe4-b42e-40ce-ac44-82845e4d7211" configVersion="c4529afedb4567de8c9d5a73e919dd036daee15e"/>
+		<Metadata name="ScheduledJob.СервиснаяШинаПредприятияОбменДанными" id="342c9c55-4427-4f26-97d8-f5efe4889d7e" configVersion="9c1f81a55c2a94f7b65fe254c50fd79262fe3041"/>
+		<Metadata name="ScheduledJob.СервиснаяШинаПредприятияОбменДанными.Schedule" id="342c9c55-4427-4f26-97d8-f5efe4889d7e.0" configVersion="04108800680852c617154b4140f2dcce17e16baf"/>
+		<Metadata name="SessionParameter.ОбъектыСервиснойШиныПредприятия" id="5264c910-fc56-4dc7-9b7f-295d6a4e681d" configVersion="45e959a941b8d5c67d8ef0699cc746b4a9dddad9"/>
+		<Metadata name="Subsystem.СервиснаяШинаПредприятия" id="9bac9e5c-2e09-4a8c-8685-f7d13837fe67" configVersion="e367efc4bb36fd66695b103ecb9467463b3b8639"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
