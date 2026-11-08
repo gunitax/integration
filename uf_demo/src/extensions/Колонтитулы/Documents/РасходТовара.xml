@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Document uuid="39340ed5-4759-4edf-b73d-47685c02d893">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.РасходТовара" category="Object">
+				<xr:TypeId>7616562a-8368-48df-946d-e5b54a4f9f50</xr:TypeId>
+				<xr:ValueId>6c88d58d-4f23-4481-93f3-91db27dceb8b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.РасходТовара" category="Ref">
+				<xr:TypeId>fc75c974-c1cd-4da8-82e4-2104624ec776</xr:TypeId>
+				<xr:ValueId>454798d6-422c-4d5e-bf35-69106d86afc3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.РасходТовара" category="Selection">
+				<xr:TypeId>da779bd4-c19c-4dd6-9073-37d7a4ee73a5</xr:TypeId>
+				<xr:ValueId>3fa81e26-621e-458c-a844-ca996c4d08a9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.РасходТовара" category="List">
+				<xr:TypeId>6d82aec5-ddc8-4f9b-a769-8f89cf65b0e6</xr:TypeId>
+				<xr:ValueId>7e461b62-ac65-4b30-808b-ada45d00a999</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.РасходТовара" category="Manager">
+				<xr:TypeId>926b67c2-2d61-4744-a52c-949713c62685</xr:TypeId>
+				<xr:ValueId>6b4865a6-a3e5-45e0-8a9c-39068af59909</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РасходТовара</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>b6a6ceb6-2d64-414f-8082-84705f6840d7</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ОформлениеДоставки</Form>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

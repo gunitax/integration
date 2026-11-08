@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="b940fee5-3917-411a-9256-26688b304d8f">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыТоваров" category="Ref">
+				<xr:TypeId>f9cfcebd-30b4-44d6-880e-5fc0c4d99827</xr:TypeId>
+				<xr:ValueId>916e5180-48d0-4a4f-bb94-0998a5ad0876</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыТоваров" category="Manager">
+				<xr:TypeId>0876514e-2028-48b3-92fa-9f7ce56cdc44</xr:TypeId>
+				<xr:ValueId>8b7b5118-279e-4083-a064-058e43197fc4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыТоваров" category="List">
+				<xr:TypeId>1c83cd79-3411-4ed1-93ca-363fb670848c</xr:TypeId>
+				<xr:ValueId>fcedf760-b365-4fba-9d5c-5a940bb24826</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВидыТоваров</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="de6d23a9-5e00-41bb-bc39-31248dfde2c0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Товар</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3dbbd400-df50-4f56-af5b-c40ea9c59af1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Услуга</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

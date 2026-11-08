@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<DataProcessor uuid="c8083a88-58ca-4299-af17-c8075800183d">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.Путеводитель" category="Object">
+				<xr:TypeId>0116a12d-5957-411a-9762-65d75913169e</xr:TypeId>
+				<xr:ValueId>3827f219-7c12-4451-a55a-69bd52648f6f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.Путеводитель" category="Manager">
+				<xr:TypeId>66880a8b-9bd7-4a69-b860-a80aadfbaa13</xr:TypeId>
+				<xr:ValueId>16b003ad-b18c-4829-a404-d7dceb1ed73f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Путеводитель</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<Template>ВТ_РасширенияКонфигурации</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

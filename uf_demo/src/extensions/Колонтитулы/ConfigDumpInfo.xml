@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.21">
+	<ConfigVersions>
+		<Metadata name="CommonPicture.КОЛ_Логотип" id="db36b30d-c0cf-4b86-971f-8f389247422d" configVersion="c56115cd8550987b971b8a1ee252dfcc2c6c2276"/>
+		<Metadata name="CommonPicture.КОЛ_Логотип.Picture" id="db36b30d-c0cf-4b86-971f-8f389247422d.0" configVersion="edb2d31cac9c8192806a7f8e4722e1170aa56b43"/>
+		<Metadata name="Configuration.Колонтитулы" id="bc9210f0-4096-4176-9b39-40abef430575" configVersion="e2fadf7e5e57729d227ed8dee6a4d8c7908a2602"/>
+		<Metadata name="Document.РасходТовара" id="39340ed5-4759-4edf-b73d-47685c02d893" configVersion="e425d7a07746bc86f281fffa5187298cd72b235e"/>
+		<Metadata name="Document.РасходТовара.Form.ОформлениеДоставки" id="9ab60749-8dec-4fd1-bcfe-baf723f59a79" configVersion="7b093b155acc7cd2527d9cbf8e8fe45e2336a933"/>
+		<Metadata name="Document.РасходТовара.Form.ОформлениеДоставки.Form" id="9ab60749-8dec-4fd1-bcfe-baf723f59a79.0" configVersion="c826dc5bea8d3e5ebcdd761f11775cc7903c0220"/>
+		<Metadata name="Language.Русский" id="7db6d545-5484-4cee-aa2c-dc4d633d6047" configVersion="eae2259250b13b4b299ec49dba72bfc2256393b3"/>
+		<Metadata name="Role.КОЛ_ОсновнаяРоль" id="52a9894e-ca48-44d8-b51d-77bba783687c" configVersion="57843ec9522c030b3d590027ad87a3cdf77697ca"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
