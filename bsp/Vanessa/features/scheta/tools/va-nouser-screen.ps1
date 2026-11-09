@@ -1,4 +1,4 @@
-﻿# Запуск сценария Vanessa Automation в информационной базе БЕЗ пользователей ИБ.
+# Запуск сценария Vanessa Automation в информационной базе БЕЗ пользователей ИБ.
 # Вариант va.ps1 без /N: в базах, где список пользователей ИБ пуст (свежая файловая база),
 # платформа отвергает /N «Пользователь ИБ не идентифицирован», поэтому имя не передается
 # ни тестовому клиенту, ни менеджеру (сеансы анонимные, полные права).
@@ -18,7 +18,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$vanessa = 'Q:\integration\bsp\Vanessa'
+$vanessa = (Resolve-Path (Join-Path $PSScriptRoot '..\..\..')).Path
 
 if ($BasePath) {
     if (-not (Test-Path (Join-Path $BasePath '1Cv8.1CD'))) {

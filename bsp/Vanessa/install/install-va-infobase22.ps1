@@ -5,7 +5,7 @@
 $ErrorActionPreference = 'Stop'
 
 $exe    = 'C:\Program Files\1cv8\8.5.1.1529\bin\1cv8.exe'
-$base   = 'C:\Users\sax\Documents\InfoBase22'
+$base   = 'D:\infobase\infobase22'
 $user   = 'Администратор'
 $cfe    = 'Q:\AIZCODE.V5\Vanessa\tools\VAExtension.1.32.cfe'
 $ext    = 'VAExtension'

@@ -4,8 +4,8 @@
 
 ## Предпосылки
 
-- Источник: `C:\Users\sax\Documents\InfoBase22` (БСП, пользователь «Администратор») с расширениями `ЭкспортСчетовВШину` и `СверкаСправочников`.
-- Приёмник: `C:\Users\sax\Documents\uf-demo-test` (пользователей нет) с расширениями `ИмпортСчетовИзШины` и `ИмпортТоваровИзШины`.
+- Источник: `D:\infobase\infobase22` (БСП, пользователь «Администратор») с расширениями `ЭкспортСчетовВШину` и `СверкаСправочников`.
+- Приёмник: `D:\infobase\ufdemotest` (пользователей нет) с расширениями `ИмпортСчетовИзШины` и `ИмпортТоваровИзШины`.
 - Публикация приёмника на Apache: `http://localhost/uf-demo-test` (для HTTP-среза сверки).
 - Справочники приёмника наполнены элементами, наименования которых совпадают с данными счёта (см. правила в [contracts/invoice-message.md](contracts/invoice-message.md)); товары уже могут быть созданы обменом `goods`; склад приёмника — первый непомеченный используемый.
 
@@ -36,8 +36,8 @@
 
 ```powershell
 # экспорт + сверка (база InfoBase22, Vanessa с предзапуском TestClient)
-powershell -File bsp\vanessa\va.ps1 -Feature bsp\Vanessa\features\scheta\scheta-export.feature -BasePath C:\Users\sax\Documents\InfoBase22 -PreLaunchClient
-powershell -File bsp\vanessa\va.ps1 -Feature bsp\Vanessa\features\scheta\scheta-sverka.feature -BasePath C:\Users\sax\Documents\InfoBase22 -PreLaunchClient
+powershell -File bsp\vanessa\va.ps1 -Feature bsp\Vanessa\features\scheta\scheta-export.feature -BasePath D:\infobase\infobase22 -PreLaunchClient
+powershell -File bsp\vanessa\va.ps1 -Feature bsp\Vanessa\features\scheta\scheta-sverka.feature -BasePath D:\infobase\infobase22 -PreLaunchClient
 # импорт (база uf-demo-test, без /N)
 powershell -File bsp\vanessa\va-nouser.ps1 -Feature bsp\Vanessa\features\scheta\scheta-import.feature
 ```

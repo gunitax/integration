@@ -1,11 +1,11 @@
-﻿# Сборка PDF-инструкции «Обмен счёт → заказ» из снимков Vanessa.
+# Сборка PDF-инструкции «Обмен счёт → заказ» из снимков Vanessa.
 # Снимки: C:\temp\manual-scheta (создаются фичами scheta-manual.feature и
 # scheta-manual-import.feature). PDF: bsp\Vanessa\docs\обмен-счет-заказ-инструкция.pdf.
 # Механика: генерируем HTML с разделами и снимками, печатаем в PDF через
 # msedge --headless --print-to-pdf (дополнительные инструменты не требуются).
 param(
     [string]$Screens = 'C:\temp\manual-scheta',
-    [string]$Out = 'Q:\integration\bsp\Vanessa\docs\обмен-счет-заказ-инструкция.pdf',
+    [string]$Out = (Join-Path $PSScriptRoot '..\..\..\docs\обмен-счет-заказ-инструкция.pdf'),
     [string]$Edge = 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
 )
 
