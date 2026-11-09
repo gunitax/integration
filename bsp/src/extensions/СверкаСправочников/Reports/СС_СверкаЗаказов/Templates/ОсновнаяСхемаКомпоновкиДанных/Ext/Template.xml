@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номер</dataPath>
+			<field>Номер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтроки</dataPath>
+			<field>НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Счёт</dataPath>
+			<field>Счёт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаленияСчёта</dataPath>
+			<field>ПометкаУдаленияСчёта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОрганизацияИсточника</dataPath>
+			<field>ОрганизацияИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПокупательИсточника</dataPath>
+			<field>ПокупательИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВалютаКодИсточника</dataPath>
+			<field>ВалютаКодИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаДокументаИсточника</dataPath>
+			<field>СуммаДокументаИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураИсточника</dataPath>
+			<field>НоменклатураИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АртикулИсточника</dataPath>
+			<field>АртикулИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоИсточника</dataPath>
+			<field>КоличествоИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаИсточника</dataPath>
+			<field>ЦенаИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСтрокиИсточника</dataPath>
+			<field>СуммаСтрокиИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОрганизацияПриемника</dataPath>
+			<field>ОрганизацияПриемника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПокупательПриемника</dataPath>
+			<field>ПокупательПриемника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВалютаКодПриемника</dataPath>
+			<field>ВалютаКодПриемника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаДокументаПриемника</dataPath>
+			<field>СуммаДокументаПриемника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураПриемника</dataPath>
+			<field>НоменклатураПриемника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АртикулПриемника</dataPath>
+			<field>АртикулПриемника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПриемника</dataPath>
+			<field>КоличествоПриемника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаПриемника</dataPath>
+			<field>ЦенаПриемника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСтрокиПриемника</dataPath>
+			<field>СуммаСтрокиПриемника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаЗагрузки</dataPath>
+			<field>ДатаЗагрузки</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Сводно.Номер КАК Номер,
+	Сводно.Дата КАК Дата,
+	Сводно.НомерСтроки КАК НомерСтроки,
+	Сводно.Статус КАК Статус,
+	Сводно.Счёт КАК Счёт,
+	Сводно.ПометкаУдаленияСчёта КАК ПометкаУдаленияСчёта,
+	Сводно.ОрганизацияИсточника КАК ОрганизацияИсточника,
+	Сводно.ПокупательИсточника КАК ПокупательИсточника,
+	Сводно.ВалютаКодИсточника КАК ВалютаКодИсточника,
+	Сводно.СуммаДокументаИсточника КАК СуммаДокументаИсточника,
+	Сводно.НоменклатураИсточника КАК НоменклатураИсточника,
+	Сводно.АртикулИсточника КАК АртикулИсточника,
+	Сводно.КоличествоИсточника КАК КоличествоИсточника,
+	Сводно.ЦенаИсточника КАК ЦенаИсточника,
+	Сводно.СуммаСтрокиИсточника КАК СуммаСтрокиИсточника,
+	Сводно.ОрганизацияПриемника КАК ОрганизацияПриемника,
+	Сводно.ПокупательПриемника КАК ПокупательПриемника,
+	Сводно.ВалютаКодПриемника КАК ВалютаКодПриемника,
+	Сводно.СуммаДокументаПриемника КАК СуммаДокументаПриемника,
+	Сводно.НоменклатураПриемника КАК НоменклатураПриемника,
+	Сводно.АртикулПриемника КАК АртикулПриемника,
+	Сводно.КоличествоПриемника КАК КоличествоПриемника,
+	Сводно.ЦенаПриемника КАК ЦенаПриемника,
+	Сводно.СуммаСтрокиПриемника КАК СуммаСтрокиПриемника,
+	Сводно.ДатаЗагрузки КАК ДатаЗагрузки
+ИЗ
+	(ВЫБРАТЬ
+		ЕСТЬNULL(Сч.Номер9, Рег.Номер) КАК Номер,
+		ЕСТЬNULL(Сч.ДатаСчёта, Рег.Дата) КАК Дата,
+		ЕСТЬNULL(Сч.НомерСтроки, Рег.СтрокаЗаказа) КАК НомерСтроки,
+		Сч.Ссылка КАК Счёт,
+		Сч.ПометкаУдаления КАК ПометкаУдаленияСчёта,
+		Сч.Организация КАК ОрганизацияИсточника,
+		Сч.Покупатель КАК ПокупательИсточника,
+		Сч.ВалютаКод КАК ВалютаКодИсточника,
+		Сч.СуммаДокумента КАК СуммаДокументаИсточника,
+		Сч.Номенклатура КАК НоменклатураИсточника,
+		Сч.Артикул КАК АртикулИсточника,
+		Сч.Количество КАК КоличествоИсточника,
+		Сч.Цена КАК ЦенаИсточника,
+		Сч.СуммаСтроки КАК СуммаСтрокиИсточника,
+		Рег.Организация КАК ОрганизацияПриемника,
+		Рег.Покупатель КАК ПокупательПриемника,
+		Рег.ВалютаКод КАК ВалютаКодПриемника,
+		Рег.СуммаДокумента КАК СуммаДокументаПриемника,
+		Рег.Номенклатура КАК НоменклатураПриемника,
+		Рег.Артикул КАК АртикулПриемника,
+		Рег.Количество КАК КоличествоПриемника,
+		Рег.Цена КАК ЦенаПриемника,
+		Рег.СуммаСтроки КАК СуммаСтрокиПриемника,
+		Рег.ДатаЗагрузки КАК ДатаЗагрузки,
+		ВЫБОР
+			КОГДА Сч.ПометкаУдаления ТОГДА "Счёт помечен на удаление"
+			КОГДА Рег.Номер ЕСТЬ NULL ТОГДА "Нет в приёмнике"
+			КОГДА Сч.Ссылка ЕСТЬ NULL ТОГДА "Нет в источнике"
+			КОГДА ЕСТЬNULL(Сч.Организация, "") = ЕСТЬNULL(Рег.Организация, "")
+				И ЕСТЬNULL(Сч.Покупатель, "") = ЕСТЬNULL(Рег.Покупатель, "")
+				И ЕСТЬNULL(Сч.ВалютаКод, "") = ЕСТЬNULL(Рег.ВалютаКод, "")
+				И ЕСТЬNULL(Сч.Номенклатура, "") = ЕСТЬNULL(Рег.Номенклатура, "")
+				И ЕСТЬNULL(Сч.Артикул, "") = ЕСТЬNULL(Рег.Артикул, "")
+				И ЕСТЬNULL(Сч.Количество, 0) = ЕСТЬNULL(Рег.Количество, 0)
+				И ЕСТЬNULL(Сч.Цена, 0) = ЕСТЬNULL(Рег.Цена, 0)
+				И ЕСТЬNULL(Сч.СуммаСтроки, 0) = ЕСТЬNULL(Рег.СуммаСтроки, 0)
+				И ЕСТЬNULL(Сч.СуммаДокумента, 0) = ЕСТЬNULL(Рег.СуммаДокумента, 0)
+			ТОГДА "Совпадает"
+			ИНАЧЕ "Расходится"
+		КОНЕЦ КАК Статус
+	ИЗ
+		(ВЫБРАТЬ
+			Шапки.Ссылка КАК Ссылка,
+			ВЫБОР
+				КОГДА ПОДСТРОКА(Шапки.Номер, 11, 1) &lt;&gt; "" ТОГДА ПОДСТРОКА(Шапки.Номер, 3, 9)
+				КОГДА ПОДСТРОКА(Шапки.Номер, 10, 1) &lt;&gt; "" ТОГДА ПОДСТРОКА(Шапки.Номер, 2, 9)
+				ИНАЧЕ Шапки.Номер
+			КОНЕЦ КАК Номер9,
+			Шапки.Дата КАК ДатаСчёта,
+			ЕСТЬNULL(Строки.НомерСтроки, 0) КАК НомерСтроки,
+			Шапки.ПометкаУдаления КАК ПометкаУдаления,
+			ПОДСТРОКА(Шапки.Организация.Наименование, 1, 25) КАК Организация,
+			ПОДСТРОКА(Шапки.Контрагент.Наименование, 1, 30) КАК Покупатель,
+			Шапки.ВалютаДокумента.Код КАК ВалютаКод,
+			Суммы.СуммаДокумента КАК СуммаДокумента,
+			ПОДСТРОКА(Строки.Номенклатура.Наименование, 1, 50) КАК Номенклатура,
+			ПОДСТРОКА(Строки.Номенклатура.Артикул, 1, 15) КАК Артикул,
+			Строки.Количество КАК Количество,
+			Строки.Цена КАК Цена,
+			Строки.Сумма КАК СуммаСтроки
+		ИЗ
+			Документ._ДемоСчетНаОплатуПокупателю КАК Шапки
+				ЛЕВОЕ СОЕДИНЕНИЕ Документ._ДемоСчетНаОплатуПокупателю.Товары КАК Строки
+				ПО Строки.Ссылка = Шапки.Ссылка
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					Т.Ссылка КАК Ссылка,
+					СУММА(Т.Сумма) КАК СуммаДокумента
+				ИЗ
+					Документ._ДемоСчетНаОплатуПокупателю.Товары КАК Т
+				СГРУППИРОВАТЬ ПО
+					Т.Ссылка) КАК Суммы
+				ПО Суммы.Ссылка = Шапки.Ссылка) КАК Сч
+			ПОЛНОЕ СОЕДИНЕНИЕ РегистрСведений.СС_СостояниеЗаказовПриемника КАК Рег
+			ПО Рег.Номер = Сч.Номер9
+				И Рег.Дата = Сч.ДатаСчёта
+				И Рег.СтрокаЗаказа = Сч.НомерСтроки
+	) КАК Сводно
+ГДЕ
+	(&amp;ДатаНачала = ДАТАВРЕМЯ(1, 1, 1) ИЛИ Сводно.Дата &gt;= &amp;ДатаНачала)
+	И (&amp;ДатаОкончания = ДАТАВРЕМЯ(1, 1, 1) ИЛИ Сводно.Дата &lt;= &amp;ДатаОкончания)
+УПОРЯДОЧИТЬ ПО
+	Статус,
+	Номер,
+	НомерСтроки</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период по дате счёта</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Окончание периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сверка счетов с заказами приёмной базы</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>true</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+					<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string">Совпадает</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>d6c7494e-2d0f-46d5-bc42-ecea708b17a3</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Статус</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Статус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

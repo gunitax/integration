@@ -83,6 +83,7 @@
 			<CommonTemplate>ИТШ_librdkafka_linux64</CommonTemplate>
 			<CommonModule>ИТШ_Шина</CommonModule>
 			<CommonModule>ИТШ_ЗагрузкаТоваров</CommonModule>
+			<HTTPService>ИТШ_Товары</HTTPService>
 			<DataProcessor>ИТШ_ЗагрузкаТоваров</DataProcessor>
 		</ChildObjects>
 	</Configuration>

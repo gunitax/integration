@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ключ</dataPath>
+			<field>Ключ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТоварИсточника</dataPath>
+			<field>ТоварИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаименованиеИсточника</dataPath>
+			<field>НаименованиеИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АртикулИсточника</dataPath>
+			<field>АртикулИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ШтрихкодИсточника</dataPath>
+			<field>ШтрихкодИсточника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаименованиеПриемника</dataPath>
+			<field>НаименованиеПриемника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АртикулПриемника</dataPath>
+			<field>АртикулПриемника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ШтрихкодПриемника</dataPath>
+			<field>ШтрихкодПриемника</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаЗагрузки</dataPath>
+			<field>ДатаЗагрузки</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВЫБОР
+		КОГДА Ном.Артикул &lt;&gt; "" ТОГДА "А:" + Ном.Артикул
+		КОГДА Ном.Штрихкод &lt;&gt; "" ТОГДА "Ш:" + Ном.Штрихкод
+		ИНАЧЕ "Н:" + Ном.Наименование
+	КОНЕЦ КАК Ключ,
+	Ном.Ссылка КАК ТоварИсточника,
+	Ном.Наименование КАК НаименованиеИсточника,
+	Ном.Артикул КАК АртикулИсточника,
+	Ном.Штрихкод КАК ШтрихкодИсточника,
+	Рег.НаименованиеПриемника КАК НаименованиеПриемника,
+	Рег.АртикулПриемника КАК АртикулПриемника,
+	Рег.ШтрихкодПриемника КАК ШтрихкодПриемника,
+	Рег.ДатаЗагрузки КАК ДатаЗагрузки,
+	ВЫБОР
+		КОГДА Рег.Ключ ЕСТЬ NULL ТОГДА "Нет в приёмнике"
+		КОГДА Ном.Ссылка ЕСТЬ NULL ТОГДА "Нет в источнике"
+		КОГДА ЕСТЬNULL(ПОДСТРОКА(Ном.Наименование, 1, 50), "") = ЕСТЬNULL(Рег.НаименованиеПриемника, "")
+			И ЕСТЬNULL(ПОДСТРОКА(Ном.Артикул, 1, 15), "") = ЕСТЬNULL(Рег.АртикулПриемника, "")
+			И ЕСТЬNULL(ПОДСТРОКА(Ном.Штрихкод, 1, 20), "") = ЕСТЬNULL(Рег.ШтрихкодПриемника, "")
+			И ЕСТЬNULL(ПОДСТРОКА(Ном.Комментарий, 1, 500), "") = ЕСТЬNULL(ПОДСТРОКА(Рег.ОписаниеПриемника, 1, 500), "")
+			ТОГДА "Совпадает"
+		ИНАЧЕ "Расходится"
+	КОНЕЦ КАК Статус
+ИЗ
+	Справочник._ДемоНоменклатура КАК Ном
+		ПОЛНОЕ СОЕДИНЕНИЕ РегистрСведений.СС_СостояниеТоваровПриемника КАК Рег
+		ПО Рег.Ключ = ВЫБОР
+			КОГДА Ном.Артикул &lt;&gt; "" ТОГДА "А:" + Ном.Артикул
+			КОГДА Ном.Штрихкод &lt;&gt; "" ТОГДА "Ш:" + Ном.Штрихкод
+			ИНАЧЕ "Н:" + Ном.Наименование
+		КОНЕЦ
+ГДЕ
+	Ном.Ссылка ЕСТЬ NULL
+		ИЛИ НЕ Ном.ЭтоГруппа И НЕ Ном.ПометкаУдаления
+УПОРЯДОЧИТЬ ПО
+	Статус,
+	ТоварИсточника</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сверка товаров с приёмной базой</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>true</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+					<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string">Совпадает</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>d6c7494e-2d0f-46d5-bc42-ecea708b17a3</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Статус</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Статус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
